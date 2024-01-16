@@ -1,0 +1,278 @@
+@keyframes leftSideAni {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes rightSideAni {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes navani {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes topSideAni {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}  @keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar {
+  background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%);
+  background-color: transparent;
+  height: 70px;
+  display: flex;
+  width: 100%;
+  align-items: end;
+  justify-content: end;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  
+  box-shadow: 0 4px 17px rgb(255 255 255 / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  @media (max-width: 960px) {
+    background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 100%); 
+    display: block;
+    transition: 0.8s all  ease ease ease-in-out;
+  
+    height: 60px;
+    align-items: left;
+    top: 0; 
+    font-size: 1rem;
+
+  }
+}
+#open {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 16px;
+  position: fixed;
+  top: 8px;
+  right :0;
+  width: 53%;
+  height: 60%;
+  padding: 12px 40px 24px 40px;
+  background: rgba(0, 0, 0, 0.4);
+  
+  transition: all 0.3s ease-in-out;
+  transform: translateY(5%);
+  border-radius: 0 0 20px 20px;
+  /* backdrop-filter: blur(5px);  */
+  transform: translateX(10%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
+  opacity: 100;
+  z-index: 1000;
+  
+}
+
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+#open a {
+  width: 5%;
+  text-align: left;
+  margin: 10px 0;
+  color: rgb(72, 247, 116); 
+}
+#open .toggleButton {
+  margin-right: 10%;
+}
+#open .links img{
+  margin-left: 18%;
+}
+.navbar .links img {
+  position: absolute;
+  
+  width: 40px;
+  height: auto;
+  margin: 5px;
+  top: 10px;
+  left: 10px;
+  animation: leftSideAni 1s ease forwards;
+  @media (max-width: 640px) {
+    margin-left: 5%;
+    width: 35px;
+    height: 35px;
+    animation: rightSideAni 1s ease forwards;
+    position: absolute; /* Position absolutely within its containing element */
+    top: 10px; /* Align to the top */
+    left: 0; /* Align to the left */
+    font-size: 10px;
+    transition: 0.8s all ease;
+}
+  
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px) {
+  align-items: left;
+  align-items: left;
+}
+
+ }
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 1rem;
+  z-index: 1;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  animation: navani .3s ease forwards;
+  animation-delay: calc(.15s * var(--navAni));
+
+} 
+
+ .navbar a:hover {
+  filter: invert(75%) sepia(98%) saturate(2356%) hue-rotate(282deg) brightness(85%) contrast(101%);
+  transform: scale(1.1);
+}
+
+/* Toggle button styles */
+.toggleButton {
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1rem;
+    cursor: pointer;
+    animation: leftSideAni 1s ease forwards;
+  }
+}
+
+
+
+
+
+/* Mobile navigation styles */
+/* #open {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: fit-content;
+  background-color : transparent ;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: top;
+  z-index: 1000; 
+  backdrop-filter: blur(10px); 
+  transition: all 0.6s ease-in-out;
+  transform: translateX(0);
+  opacity: 10;
+  
+} */
+
+
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 0px;
+}
+
+#open a {
+  width: 100%;
+  text-align:left;
+  margin: 10px 0;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 960px) {
+  .navbar a {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    background-color: transparent;
+  }
+  .toggleButton {
+    display: flex;
+    font-size: 1rem;
+  }
+  #close a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+    font-size: 1rem;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  #open {
+    height: 80px;
+  }
+
+  #open .links {
+    flex-direction: row;
+  }
+}

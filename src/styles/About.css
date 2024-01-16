@@ -1,0 +1,130 @@
+.About {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+    justify-content: center;
+    background: linear-gradient(to top, #D7E1EC, #FFFFFF);
+  }
+  .About p{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 42px;
+    color:#b1b2b3;
+    text-align: center;
+    @media (max-width: 960px) {
+      text-align: center;
+    }
+  
+    @media (max-width: 640px) {
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+  .About h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #000428 , #004e92);
+      -webkit-background-clip: text; /* Add this line for WebKit browsers like Chrome and Safari */
+    color: transparent;
+  }
+  #summary p{
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #7a7c7f; font-size: 29px; font-family: "Libre Baskerville", serif; line-height: 45px; text-align: center; text-shadow: 0 1px 1px #fff; padding-top: 20px; 
+    @media (max-width: 640px) {
+      padding-left:5px;
+      padding-right:5px;
+      font-size: 12px;
+      line-height: 32px;
+    }
+  }
+
+  .hobbies-list {
+    list-style: none;
+    display: flex;
+    
+    flex-wrap: wrap;
+    padding: 20px;
+  } 
+  .hobby-card h4{
+    color:#F2F3F4;
+    text-align: center;
+  }
+  .hobby-card {
+    width: 350px;
+    height: 250px;
+   
+    padding: 1%;
+    gap: 10px;
+    max-width: 5000px;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border-radius: 16px;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    border:  0.1px solid #e6944c;
+    padding: 18px 36px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;  
+    @media (max-width: 640px) {
+
+      width: 300px;
+      height: 250px;
+    }
+  }
+ 
+  
+  
+  .hobby-card:hover {
+    transform: scale(1.2);
+  }
+  
+  .hobby-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hobbies-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hobby-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #D7E1EC;
+    text-align: center; /* Horizontal centering */
+    line-height: 1; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .About h2 {
+      font-size: 24px;
+    }
+  
+    .hobbies-list {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .hobby-card {
+      width: 100%;
+    }
+  
+    .hobbies-list li {
+      height: 120px;
+      padding: 15px;
+    }
+  
+    .hobby-icon {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+  

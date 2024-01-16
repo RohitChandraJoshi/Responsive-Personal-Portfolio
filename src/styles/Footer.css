@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  height: 80px;
+  background: -o-radial-gradient(bottom, ellipse, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.socialMedia svg {
+  color: white;
+  margin: 20px;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer svg {
+    font-size: 50px;
+  }
+}

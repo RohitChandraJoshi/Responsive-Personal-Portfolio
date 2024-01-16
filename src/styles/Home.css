@@ -1,0 +1,386 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+.contact{
+  font-size: 20px;
+  width: 100%;
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow:auto;
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+          background: linear-gradient(to top, #D7E1EC, #FFFFFF);
+}
+.projects{
+  background: linear-gradient(to top, #D7E1EC, #FFFFFF);
+}
+/* .intro {
+  
+  background: transparent;
+  z-index: 1;
+  padding-top: 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow:auto;
+  display: flex;
+  
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #f0f0f0;
+} */
+.achievement{
+  
+  background: -o-radial-gradient(bottom, ellipse, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  
+  z-index: 1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  overflow:auto;
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #f0f0f0;
+}
+@keyframes glow {
+  0% {
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px, 0 0 10px #D1D9E6;
+  }
+  100% {
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px, 0 0 20px #D1D9E6, 0 0 30px #D1D9E6, 0 0 40px #D1D9E6;
+  }
+}
+
+.profile-image {
+  width: 250px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  z-index: 3;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  top: 60%;
+  left: 18%;
+  
+  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  
+  background: linear-gradient(to left, #ffd89b , #19547b);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: glow 2s infinite alternate; 
+  /* box-shadow: 0 0 10px #D1D9E6; */
+  @media (max-width: 640px) {
+    z-index: 4;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 0%;
+    left: 10%;
+    max-width: 240px;
+    max-height: 280px;
+  }
+
+}
+.profile-image:hover {
+  transform: scale(1.1);
+}
+@keyframes leftSideAni {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes navani {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes topSideAni {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}  @keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.intro h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: #e9d35b;
+  margin-bottom: 1px;
+  text-align: center;
+  animation: leftSideAni 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+  @media (max-width: 640px) {
+    font-size:30px;
+    margin-bottom: 3px;
+  }
+}
+.intro h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: topSideAni 1s ease forwards;
+  @media (max-width: 640px) {
+    margin-bottom: 3px;
+    font-size:18px;
+  }
+}
+
+
+.intro .prompt {
+  display: flex;
+  margin-left: 7%;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+
+  animation: topSideAni 1s ease forwards;
+  @media (max-width: 640px) {
+    font-size:16px;
+    margin-left: 0%;
+  }
+  
+}
+.intro .prompt .contact-icons{
+  z-index: 1;
+
+}
+.prompt svg {
+  font-size: 40px;
+  margin: 5px;
+  color: white;
+  z-index: 1;
+  padding-top: 0%;
+}
+.education {
+  
+  background: -o-radial-gradient(bottom, ellipse, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  
+  font-size: 20px;
+  width: 100%;
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow:auto;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+          
+}
+.About{
+  font-size: 20px;
+  width: 100%;
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow:auto;
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+          background: linear-gradient(to top, #D7E1EC, #FFFFFF);
+}
+.experience{
+  
+  background: linear-gradient(to top, #D7E1EC, #FFFFFF);
+ 
+  font-size: 20px;
+  width: 100%;
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow:auto;
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.skills {
+  font-size: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow:auto;
+  display: flex;
+  padding-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  background: -o-radial-gradient(bottom, ellipse, #1B2735 0%, #090A0F 100%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+
+.skills h1 {
+  color: #3e497a;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.skills .list {
+  list-style: none;
+  width: 80%;
+  padding: 0;
+  margin: 0 20px;
+  border: 1px solid #e9d35b;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.skills .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.skills .list li span {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.skills .list li span:first-child {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .home,
+  .intro {
+    padding: 2% 0;
+  }
+
+  .skills {
+    text-align: center;
+  }
+
+  .skills h1 {
+    font-size: 24px;
+  }
+
+  .skills .list {
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills .list li {
+    height: 40px;
+  }
+
+  .skills .list li span {
+    font-size: 16px;
+  }
+}
