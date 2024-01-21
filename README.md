@@ -1,4 +1,11 @@
-Personal Portfolio
+<div align='center'>
+  
+ # Personal Portfolio
+  
+</div>
+
+
+
 ![image](https://github.com/RohitChandraJoshi/Responsive-Personal-Portfolio/assets/102249718/19af98ac-7dcc-4ca5-b276-200e3b9c50ee)
 
 
