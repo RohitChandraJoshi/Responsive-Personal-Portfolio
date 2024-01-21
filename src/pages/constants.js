@@ -8,7 +8,7 @@ import proj6 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-por
 import proj8 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj8.png"
 import proj9 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj9.png"
 import proj10 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj10.png"
-
+import proj11 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj11.png"
 export const Bio = {
     name: "Rohit Chandra Joshi",
     roles: [
@@ -190,27 +190,14 @@ export const Bio = {
         "MongoDb",
         "Node Js",
         "Express Js",
-        "Google Cloud",
         "HTML",
         "CSS"
       ],
       category: "web app",
-      github: "https://github.com/RohitChandraJoshi/Banking-App-for-Handicapped-People",
-      webapp: "https://dark-ripple-386610.uc.r.appspot.com/",
+      github: "https://github.com/RohitChandraJoshi/Divyang-Banking-Services",
+      webapp: "https://divyang-banking-services.netlify.app/",
     },
-    {
-      id: 0,
-      title: "Pg Dissertation Management System",
-      date: "Oct 2023 - Nov 2023",
-      description:
-      "Arogya Squad's PG Dissertation Management App streamlines postgraduate research with features like Google Scholar integration for topic insights, efficient MongoDB-based data handling, plagiarism checks using iThenticate, and tailored dashboards for Deans, HoDs, and students. It facilitates communication and meeting scheduling, enhancing collaboration. The app also includes a research tool for document summarization, offering a convenient, all-in-one solution for PG dissertation management.",
-      image: proj4,
-      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-      category: "web app",
-      github: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
-      webapp: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
-      
-    },
+    
     {
       id: 1,
       title: "Portfolio",
@@ -226,7 +213,38 @@ export const Bio = {
       ],
       category: "web app",
       github: "https://github.com/RohitChandraJoshi/Responsive-Personal-Portfolio",
-      webapp: "",
+      webapp: "https://rohit-chandra-joshi-portfolio.netlify.app/",
+    },
+    {
+      id: 1,
+      title: "Topic Duplicacy Checker",
+      date: "Dec 2023 - Dec 2023",
+      description:"The research topic duplicacy checker is a system designed to enhance the academic integrity of student research submissions. Students submit their research topics through the platform, and the system employs a sophisticated algorithm to analyze and compare these topics for similarities. If the similarity percentage between any two submitted topics exceeds a predefined threshold (e.g., 60%), the system triggers a pop-up notification alerting the student that their topic exhibits a high level of similarity with another submission. This proactive approach encourages students to review and revise their topics to ensure originality before finalizing their submissions. The system effectively serves as a plagiarism prevention tool, fostering a culture of academic honesty and ensuring that students engage in genuine and independent research efforts.",
+      image:
+        proj11,
+      tags: [
+        "React Js",
+        "HTML",
+        "CSS",
+        "Node js",
+        "MongoDB"
+      ],
+      category: "web app",
+      github: "https://github.com/RohitChandraJoshi/Responsive-Personal-Portfolio",
+      webapp: "https://topic-duplicacy-checker.netlify.app/",
+    },
+    {
+      id: 0,
+      title: "Pg Dissertation Management System",
+      date: "Oct 2023 - Nov 2023",
+      description:
+      "Arogya Squad's PG Dissertation Management App streamlines postgraduate research with features like Google Scholar integration for topic insights, efficient MongoDB-based data handling, plagiarism checks using iThenticate, and tailored dashboards for Deans, HoDs, and students. It facilitates communication and meeting scheduling, enhancing collaboration. The app also includes a research tool for document summarization, offering a convenient, all-in-one solution for PG dissertation management.",
+      image: proj4,
+      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+      category: "web app",
+      github: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
+      webapp: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
+      
     },
     
     {
@@ -238,8 +256,8 @@ export const Bio = {
         proj2,
       tags: ["Java", "Android Studio",, "XML", "Deep Learning"],
       category: "android app",
-      github: "https://github.com/rishavchanda/Quiz-Earn",
-      webapp: "https://github.com/rishavchanda/Quiz-Earn",
+      github: "https://github.com/RohitChandraJoshi/MyPaudha_Advanced_Agriculture_Assistant",
+      webapp: "https://github.com/RohitChandraJoshi/MyPaudha_Advanced_Agriculture_Assistant",
     },
     {
       id: 5,
