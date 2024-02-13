@@ -1,8 +1,8 @@
 
 import proj1 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj1.jpg"
-import proj2 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj2.png"
+import proj2 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/front.jpg"
 import proj3 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj3.png"
-import proj4 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj4.jpg"
+import proj4 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/portal.png"
 import proj5 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj5.jpg"
 import proj6 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj6.png"
 import proj8 from "G:/Projects/portfolio/new portfolio/rohit-portfolio/rohit-portfolio/src/assets/proj8.png"
@@ -178,6 +178,20 @@ export const Bio = {
   
   export const projects = [
     {
+      id: 0,
+      title: "Smart University Portal",
+      date: "Oct 2023 - Jan 2023",
+      description:
+      "Arogya Squad's PG Dissertation Management App streamlines postgraduate research with features like Google Scholar integration for topic insights, efficient MongoDB-based data handling, plagiarism checks using iThenticate, and tailored dashboards for Deans, HoDs, and students. It facilitates communication and meeting scheduling, enhancing collaboration. The app also includes a research tool for document summarization, offering a convenient, all-in-one solution for PG dissertation management.",
+      image: proj4,
+      tags: ["React Js","CSS", "MongoDb", "Node Js", "Express Js"],
+      category: "web app",
+      github: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
+      webapp: "https://smart-university-portal.netlify.app/",
+      
+    },
+    
+    {
       id: 9,
       title: "Divyang Banking Services",
       date: "march 2023 - Jul 2023",
@@ -233,31 +247,18 @@ export const Bio = {
       github: "https://github.com/RohitChandraJoshi/Responsive-Personal-Portfolio",
       webapp: "https://topic-duplicacy-checker.netlify.app/",
     },
-    {
-      id: 0,
-      title: "Pg Dissertation Management System",
-      date: "Oct 2023 - Nov 2023",
-      description:
-      "Arogya Squad's PG Dissertation Management App streamlines postgraduate research with features like Google Scholar integration for topic insights, efficient MongoDB-based data handling, plagiarism checks using iThenticate, and tailored dashboards for Deans, HoDs, and students. It facilitates communication and meeting scheduling, enhancing collaboration. The app also includes a research tool for document summarization, offering a convenient, all-in-one solution for PG dissertation management.",
-      image: proj4,
-      tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-      category: "web app",
-      github: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
-      webapp: "https://github.com/RohitChandraJoshi/Smart-India-Hackathon-2023-Project-Arogya-Squad",
-      
-    },
     
     {
       id: 4,
-      title: "MyPaudha",
+      title: "MyPaudha - Smart Plant App",
       date: "Jan 2023 - Fab 2023",
-      description:"Developed a sophisticated Android app for agriculture that employs Convolutional Neural Networks (CNN) for the recognition of plant diseases, pests, soil conditions, and nutrient deficiencies. The application, created using Android Studio, provides intelligent solutions for farmers, enhancing their ability to identify and address various issues affecting crop health.",
+      description:"Developed a sophisticated Android app for agriculture that employs Convolutional Neural Networks (CNN) for the recognition of plant diseases, medicinal plants, flowers, and pests. The application, created using Android Studio, provides intelligent solutions for farmers, enhancing their ability to identify and address various issues affecting crop health.",
             image:
         proj2,
-      tags: ["Java", "Android Studio",, "XML", "Deep Learning"],
+      tags: ["Java", "Android Studio", "XML","Node.js","MongoDB", "Deep Learning"],
       category: "android app",
-      github: "https://github.com/RohitChandraJoshi/MyPaudha_Advanced_Agriculture_Assistant",
-      webapp: "https://github.com/RohitChandraJoshi/MyPaudha_Advanced_Agriculture_Assistant",
+      github: "https://github.com/RohitChandraJoshi/MyPaudha_Smart_Plant_App",
+      webapp: "https://www.dropbox.com/home?preview=MyPaudha.apk",
     },
     {
       id: 5,
@@ -269,7 +270,7 @@ export const Bio = {
       tags: ["Java", "Android Studio","XML", "MySQL", "FaceRecognition"],
       category: "android app",
       github: "https://github.com/RohitChandraJoshi/Smart-Android-App-for-University-Management",
-      webapp: "https://github.com/RohitChandraJoshi/Smart-Android-App-for-University-Management",
+      webapp: "https://www.dropbox.com/home?preview=SmartCampedia.apk",
     },
     
     {
