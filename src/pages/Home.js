@@ -281,7 +281,7 @@ function Home() {
         </div>
         <Buttonouter>
 
-        <ResumeButton href="https://drive.google.com/file/d/1-4jGJ-W8hwxtIVl1mG4MHQigiVMMxaLs/view?usp=sharing" target="_blank"
+        <ResumeButton href="https://drive.google.com/file/d/1KvxV7rioa7B11KTvMn8FODGJLo1VfjM-/view?usp=sharing" target="_blank"
           rel="noopener noreferrer"><FaFilePdf/>Check Resume</ResumeButton>
         </Buttonouter>
        
